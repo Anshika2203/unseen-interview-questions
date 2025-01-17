@@ -12,11 +12,9 @@
 def knows(a, b):
     return False
 def is_prime_minister(person, knows):
-    # Check if the person is known by everyone else
     for i in range(1, person):
         if not knows(i, person):
             return False
-        # Check if the person does not know anyone else
         return True
 
     
